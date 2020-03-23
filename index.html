@@ -10,15 +10,34 @@
 </head>
 <body>
     
-    <div class="main-clock__container">
-        <div class="main-clock__wrapper">
-            <h1 class="a black80 font70">
-                00:00
-            </h1>
+    <main class="col-md-offset-3">
+        <div class="main-clock__container">
+            <div class="main-clock__wrapper">
+                <h1 class="a black80 font70">
+                    00:00
+                </h1>
+            </div>
         </div>
-    </div>
+        <form class="main-form__wrapper">
+            <input type="text" placeholder="what is your name?" class="main-form__item"/>
+        </form>
+        <div class="main-greeting__wrapper">
+            <h4 class="main-greeting__item"></h4>
+        </div>
+    </main>
+    <section class="col-md-offset-3">
+        <form class="todo-form__wrapper">
+            <input type="text" placeholder="write a to do.." class="todo-form__input"/>
+        </form>
+        <span class="todo-list__title black50 none-show">
+            is this REALLY to do?
+        </span>
+        <ul class="todo-list__wrapper"></ul>
+    </section>
     
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
     <script src="./link/js/main-clock.js"></script>
+    <script src="./link/js/main-greeting.js"></script>
+    <script src="./link/js/section-todo.js"></script>
 </body>
 </html>
