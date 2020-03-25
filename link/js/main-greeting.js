@@ -15,7 +15,6 @@ function blockedsubmit(event) {
     const currentvalue = greetinginput.value
     setgreetingname(currentvalue);
     saveusername(currentvalue);
-    console.log("it's done.");
 }
 
 function setusername() {
@@ -34,10 +33,8 @@ function nowstate__forgreeting() {
     const currentUser = localStorage.getItem(user__localstorage);
     if ( currentUser === null ) {
         setusername();
-        console.log(1);
     } else {
         setgreetingname(currentUser);
-        console.log(0);
     }
 }
 nowstate__forgreeting();
